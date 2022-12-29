@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+body,
+html {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  background: url(./images/img1.jpg) fixed no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 32px;
+  border-radius: 16px;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border-radius: 3px;
+  padding: 8px;
+}
+
+select {
+  border-radius: 3px;
+  padding: 8px;
+  cursor: pointer;
+  border-right: 8px solid transparent;
+}
+
+label {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  /* width: 9em; */
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+button::before {
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #797b88 0%, #bbbcbd 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="reset.css" />
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Não encontrou o que procurava?</h1>
+      <h3>Preencha o formulário e retornaremos o contato</h3>
+    </header>
+    <section>
+      <form>
+        <div>
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" placeholder="Nome" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Email" required />
+        </div>
+        <div>
+          <label for="fone">Telefone</label>
+          <input
+            id="fone"
+            type="tel"
+            placeholder="(99)99999-9999"
+            onkeyup="handlePhone(event)"
+            required
+          />
+        </div>
+        <div>
+          <label for="data">Data de Nascimento</label>
+          <input
+            id="data"
+            type="date"
+            placeholder="Data de Nascimento"
+            required
+          />
+        </div>
+        <div>
+          <label for="bairro">Bairro de interesse</label>
+          <input id="bairro" type="text" placeholder="Bairro de interesse" />
+        </div>
+        <div>
+          <label for="contato">Perído para Contato</label>
+          <select id="contato">
+            <option value="">Selecione</option>
+            <option value="manhã">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+          </select>
+        </div>
+        <div>
+          <label>Autoriza contato por telefone</label>
+          <div>
+            <input type="radio" id="sim" name="contato" value="Sim" />
+            <label for="sim">Sim</label>
+          </div>
+          <div>
+            <input type="radio" id="nao" name="contato" value="Não" />
+            <label for="nao">Não</label>
+          </div>
+        </div>
+        <div class="btn">
+          <button type="submit">Cadastrar</button>
+        </div>
+      </form>
+    </section>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
